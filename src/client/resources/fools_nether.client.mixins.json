@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.fools_nether.mixin.client",
+	"package": "com.itsremurin.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 

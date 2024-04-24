@@ -15,6 +15,9 @@
 	"icon": "assets/fools_nether/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.itsremurin.data.FoolsDataGenerator"
+		],
 		"main": [
 			"com.itsremurin.FoolsNetherMod"
 		],
@@ -22,6 +25,7 @@
 			"com.itsremurin.FoolsNetherModClient"
 		]
 	},
+	"accessWidener": "fools_nether.accesswidener",
 	"mixins": [
 		"fools_nether.mixins.json",
 		{

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "fools_nether",
+	"version": "${version}",
+	"name": "Fool's Nether",
+	"description": "",
+	"authors": [
+		"ItsRemurin"
+	],
+	"contact": {
+		"homepage": "https://github.com/ItsRemurin/fools-nether",
+		"sources": "https://github.com/ItsRemurin/fools-nether"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fools_nether/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.itsremurin.FoolsNetherMod"
+		],
+		"client": [
+			"com.itsremurin.FoolsNetherModClient"
+		]
+	},
+	"mixins": [
+		"fools_nether.mixins.json",
+		{
+			"config": "fools_nether.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
